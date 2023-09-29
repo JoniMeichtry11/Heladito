@@ -1,0 +1,24 @@
+<header class="bg-[#FFDABF] py-4">
+  <div class="container ps-1 pe-1 mx-auto flex items-center justify-between">
+    <a href="#" class="flex items-center text-xl">
+      <img src="../../../../assets/img/heladito_logo.png" alt="Logo" class="w-14 h-14 mr-2">
+      Heladito
+    </a>
+    <div class="hidden md:flex space-x-4">
+      <button class="bg-transparent hover:text-[#D98C6A] font-medium">Explorar</button>
+      <button class="bg-white hover:bg-[#FFE8BD] font-medium px-4 py-2 rounded">Ingresar</button>
+    </div>
+    <div class="md:hidden me-3">
+      <button (click)="showDropdown(!dropdown)">
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <div *ngIf="dropdown" (click)="showDropdown(false)" class="absolute top-12 right-0 bg-white rounded shadow-md mt-2 py-2 w-48">
+        <a href="#" class="block px-4 py-2 text-indigo-700 hover:bg-indigo-100">Opción 1</a>
+        <a href="#" class="block px-4 py-2 text-indigo-700 hover:bg-indigo-100">Opción 2</a>
+        <a href="#" class="block px-4 py-2 text-indigo-700 hover:bg-indigo-100">Opción 3</a>
+      </div>
+    </div>
+  </div>
+</header>
