@@ -1,1 +1,6 @@
-<p>explore-page works!</p>
+<app-carousel></app-carousel>
+<div class="w-full flex justify-center py-16">
+  <app-search></app-search>
+</div>
+<h3 *ngIf="path" class="text-4xl text-center mb-14">{{path | titlecase}}</h3>
+<app-list-proyects></app-list-proyects>

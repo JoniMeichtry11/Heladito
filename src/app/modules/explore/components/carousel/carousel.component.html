@@ -1,0 +1,11 @@
+<section class="w-full">
+  <swiper-container #swiperRef swiperElement [config]="config" init="false">
+    <swiper-slide *ngFor="let slide of slides" class="flex justify-center slide ">
+      <a class=" flex flex-col items-center text-center" routerLink="../{{slide.url}}">
+        <img width="50" height="50" [src]="slide.src" alt="randomized image">
+        <span>{{slide.title}}</span>
+      </a>
+    </swiper-slide>
+  </swiper-container>
+  <div class="swiper-scrollbar"></div>
+</section>

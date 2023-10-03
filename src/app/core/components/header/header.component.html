@@ -5,8 +5,12 @@
       Heladito
     </a>
     <div class="hidden md:flex space-x-4">
-      <button class="bg-transparent hover:text-[#D98C6A] font-medium">Explorar</button>
-      <button class="bg-white hover:bg-[#FFE8BD] font-medium px-4 py-2 rounded">Ingresar</button>
+      <a class="flex" href="/explore">
+        <button class="bg-transparent hover:text-[#D98C6A] font-medium" routerLink="explorer">Explorar</button>
+      </a>
+      <a class="flex" href="/login">
+        <button class="bg-white hover:bg-[#FFE8BD] font-medium px-4 py-2 rounded">Ingresar</button>
+      </a>
     </div>
     <div class="md:hidden me-3">
       <button (click)="showDropdown(!dropdown)">
